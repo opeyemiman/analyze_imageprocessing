@@ -10,6 +10,7 @@ dependencies:
   - pysolar
   - gdal
   - scikit-image
+  - scikit-learn
   - pytest
   - git
   - git-lfs
@@ -26,3 +27,5 @@ dependencies:
     - pyexiftool
     - jenkspy
     - rawpy
+    - folium
+    - shapely
