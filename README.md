@@ -1,26 +1,19 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
-# Introduction to MicaSense RedEdge Image Processing Tools
-Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
-##  Installation
+
+#  Installation
 
 Clone the repo:
 
 ```bash
 git clone https://github.com/opeyemiman/imageprocessing_plus.git
-cd CEE_FunctionLand
+cd imageprocessing_plus
 ```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
+## Introduction to MicaSense RedEdge Image Processing Tools
+Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 # 🌱🟤 functionland Script Overview
 
