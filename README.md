@@ -1,5 +1,5 @@
-## MicaSense RedEdge Image Processing Tools
-Introductory Image processing tutorials can be found at <https://github.com/micasense/imageprocessing> 
+# Introduction to MicaSense RedEdge Image Processing Tools
+Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
 # 🌱 CEE FunctionLand
@@ -7,7 +7,6 @@ Introductory Image processing tutorials can be found at <https://github.com/mica
 *A toolbox for multispectral image processing, vegetation index computation, and pixel-level ML analysis.*
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
 
 ---
@@ -16,7 +15,7 @@ Introductory Image processing tutorials can be found at <https://github.com/mica
 
 CEE FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
 
-This toolkit is designed for researchers, agronomists, and engineers working with RGB + NIR imagery and ML-driven canopy mapping.
+This toolkit is designed for researchers, geologists, and engineers working with RGB + NIR imagery and ML-driven canopy mapping.
 
 ---
 
