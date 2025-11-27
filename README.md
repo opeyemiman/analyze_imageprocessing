@@ -2,7 +2,7 @@
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
-# 🌱 []_FunctionLand Scripts
+# 🌱 FunctionLand Scripts
 
 *Functionland Scripts are called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
@@ -13,18 +13,18 @@ Introductory Image processing steps and tutorials can be found at <https://githu
 
 ## 📖 Overview
 
-CEE FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
+FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
 
 This toolkit is designed for researchers, geologists, and engineers working with RGB + NIR imagery and ML-driven canopy mapping.
 
 ---
 
-## 📦 Installation
+##  Installation
 
 Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/CEE_FunctionLand.git
+git clone https://github.com/opeyemiman/imageprocessing_plus.git
 cd CEE_FunctionLand
 ```
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### **Load and reduce multispectral bands**
 
