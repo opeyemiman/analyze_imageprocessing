@@ -2,6 +2,173 @@
 Introductory Image processing tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
+# 🌱 CEE FunctionLand
+
+*A toolbox for multispectral image processing, vegetation index computation, and pixel-level ML analysis.*
+
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Status](https://img.shields.io/badge/Status-Active-success.svg)
+
+---
+
+## 📖 Overview
+
+CEE FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
+
+This toolkit is designed for researchers, agronomists, and engineers working with RGB + NIR imagery and ML-driven canopy mapping.
+
+---
+
+## 📦 Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/yourusername/CEE_FunctionLand.git
+cd CEE_FunctionLand
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Quick Start
+
+### **Load and reduce multispectral bands**
+
+```python
+from functions import acquire_bands, im_reduction3d
+
+bands = acquire_bands("path/to/image_folder")
+reduced = im_reduction3d(bands, block=4)
+```
+
+### **Compute NDVI**
+
+```python
+from functions import NDVI_calculator
+
+ndvi = NDVI_calculator(bands)
+```
+
+### **Generate an ML mask**
+
+```python
+from functions import dnnmasker
+
+mask = dnnmasker(bands, model="models/dnn_model.h5")
+```
+
+---
+
+# 📘 Function Guide
+
+Below is a friendly overview of the functions included in this repository.
+Use it as a quick reference for what each function does and how it fits into your workflow.
+
+---
+
+## 🖼️ Image + Pixel Handling
+
+### **`write_labeled_pixels()`**
+
+Writes labeled pixel samples to a PNG image grid — useful for training data creation.
+
+### **`extract_pixels_by_polygon_with_deresolution()`**
+
+Extracts pixel values within polygon-shaped regions and optionally reduces resolution before writing to CSV.
+
+### **`im_reduction3d()`**
+
+Downscales a 3-band (RGB/NIR/etc.) image using block-compression.
+
+### **`im_reduction2d()`**
+
+Downscales 2D grayscale or single-band images.
+
+### **`acquire_bands()`**
+
+Loads aligned multispectral images and returns band arrays (blue, green, red, red-edge, NIR).
+Optionally creates verification plots.
+
+### **`greyscale_acquire()`**
+
+Creates a greyscale visualization of aligned band stacks.
+
+---
+
+## 🌱 Vegetation & Index Calculations
+
+### **`NDVI_calculator()`**
+
+Calculates **NDVI** (Normalized Difference Vegetation Index) using red + NIR.
+
+### **`NDSSI_calculator()`**
+
+Computes **NDSSI** for senescence detection using blue + NIR.
+
+### **`wen_algo()`**
+
+Implements the Wen vegetation greenness algorithm.
+
+### **`NDRE_calculator()`**
+
+Computes **NDRE** (Normalized Difference Red-Edge Index) for nutrient stress mapping.
+
+### **`NDWI_calculator()`**
+
+Calculates **NDWI** (Normalized Difference Water Index) to evaluate moisture content.
+
+---
+
+## 📊 Analysis Tools
+
+### **`capturepixellister()`**
+
+Creates a combined pixel dataset of multiple indices and raw bands — ideal for ML workflows.
+
+### **`analyze_pixel_data_from_csv()`**
+
+Analyzes a CSV of pixel values and computes statistics across vertical canopy segments.
+
+### **`masker()`**
+
+Applies rule-based threshold masks on band or index values, with optional overlays.
+
+---
+
+## 🤖 Machine Learning Maskers
+
+### **`dnnmasker()`**
+
+Generates binary masks using a trained deep neural network.
+
+### **`probdnnmasker()`**
+
+Outputs **probability maps** from a DNN.
+
+### **`rfmasker()`**
+
+Predicts per-pixel masks using a Random Forest classifier.
+
+### **`probrfmasker()`**
+
+Outputs pixel-level **Random Forest probabilities**.
+
+---
+
+## 🗺️ Utility & Visualization
+
+### **`plot_metadata_csv()`**
+
+Creates plots/maps from metadata CSV files for visualization and analysis.
+
+
 ## License
 
 The MIT License (MIT)
