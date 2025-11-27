@@ -1,3 +1,6 @@
+
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-success.svg)
 # Introduction to MicaSense RedEdge Image Processing Tools
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
@@ -6,16 +9,13 @@ Introductory Image processing steps and tutorials can be found at <https://githu
 
 *Functionland Script contains special functions called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-success.svg)
-
 ---
 
 ## 📖 Overview
 
 FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
 
-This toolkit is designed for researchers, geologists, and engineers working with RGB + NIR imagery and ML-driven canopy mapping.
+This toolkit is designed for researchers, geologists, and civil engineers working with RGB + NIR imagery and ML-driven canopy mapping.
 
 ---
 
@@ -76,7 +76,7 @@ Use it as a quick reference for what each function does and how it fits into you
 
 ### **`write_labeled_pixels()`**
 
-Writes labeled pixel samples to a PNG image grid — useful for training data creation.
+Combines extract_pixels_by_polygon_with_deresolution() with capturepixellister() by writing labeled pixel samples to a CSV file to generate a training set from labelling COCO-JSON.
 
 ### **`extract_pixels_by_polygon_with_deresolution()`**
 
@@ -101,7 +101,7 @@ Creates a greyscale visualization of aligned band stacks.
 
 ---
 
-## 🌱 Vegetation & Index Calculations
+## 🌱 Vegetation & Sediment Index Calculations
 
 ### **`NDVI_calculator()`**
 
@@ -117,7 +117,7 @@ Implements the Wen algorithm.
 
 ### **`NDRE_calculator()`**
 
-Computes **NDRE** (Normalized Difference Red-Edge Index) for nutrient stress mapping.
+Computes **NDRE** (Normalized Difference Red-Edge Index).
 
 ### **`NDWI_calculator()`**
 
