@@ -2,9 +2,9 @@
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
-# 🌱 FunctionLand Scripts
+# 🌱 functionland Script
 
-*Functionland Scripts are called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
+*Functionland Script contains special functions called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
@@ -93,7 +93,7 @@ Downscales 2D grayscale or single-band images.
 ### **`acquire_bands()`**
 
 Loads aligned multispectral images and returns band arrays (blue, green, red, red-edge, NIR).
-Optionally creates verification plots.
+
 
 ### **`greyscale_acquire()`**
 
@@ -105,15 +105,15 @@ Creates a greyscale visualization of aligned band stacks.
 
 ### **`NDVI_calculator()`**
 
-Calculates **NDVI** (Normalized Difference Vegetation Index) using red + NIR.
+Calculates **NDVI** (Normalized Difference Vegetation Index).
 
 ### **`NDSSI_calculator()`**
 
-Computes **NDSSI** for senescence detection using blue + NIR.
+Computes **NDSSI** (Normalized Difference Suspended Sediment Index)
 
 ### **`wen_algo()`**
 
-Implements the Wen vegetation greenness algorithm.
+Implements the Wen algorithm.
 
 ### **`NDRE_calculator()`**
 
