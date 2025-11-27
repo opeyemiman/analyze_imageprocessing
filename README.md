@@ -2,9 +2,9 @@
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
-# 🌱 CEE FunctionLand
+# 🌱 []_FunctionLand Scripts
 
-*A toolbox for multispectral image processing, vegetation index computation, and pixel-level ML analysis.*
+*Functionland Scripts are called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
