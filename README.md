@@ -5,20 +5,6 @@
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
 
-# 🌱🟤 functionland Script
-
-*Functionland Script contains special functions called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
-
----
-
-## 📖 Overview
-
-FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
-
-This toolkit is designed for researchers, geologists, and civil engineers working with RGB + NIR imagery and ML-driven canopy mapping.
-
----
-
 ##  Installation
 
 Clone the repo:
@@ -36,34 +22,18 @@ pip install -r requirements.txt
 
 ---
 
-##  Quick Start
+# 🌱🟤 functionland Script Overview
 
-### **Load and reduce multispectral bands**
-
-```python
-from functions import acquire_bands, im_reduction3d
-
-bands = acquire_bands("path/to/image_folder")
-reduced = im_reduction3d(bands, block=4)
-```
-
-### **Compute NDVI**
-
-```python
-from functions import NDVI_calculator
-
-ndvi = NDVI_calculator(bands)
-```
-
-### **Generate an ML mask**
-
-```python
-from functions import dnnmasker
-
-mask = dnnmasker(bands, model="models/dnn_model.h5")
-```
+*Functionland Script contains special functions called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
 ---
+
+FunctionLand is a collection of utilities for handling multispectral image data, extracting pixel samples, computing vegetation indices, performing rule-based/machine-learning masking, and analyzing canopy or vegetation structure.
+
+This toolkit is designed for researchers, geologists, and civil engineers working with RGB + NIR imagery and ML-driven canopy mapping.
+
+---
+
 
 # 📘 Function Guide
 
