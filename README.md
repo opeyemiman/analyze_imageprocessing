@@ -15,7 +15,10 @@ cd imageprocessing_plus
 ## Introduction to MicaSense RedEdge Image Processing Tools
 Introductory Image processing steps and tutorials can be found at <https://github.com/micasense/imageprocessing> 
 
-# 🌱🟤 functionland Script Overview
+# wildcat_main Script Overview 
+The main script uses the calibration capture to generate 5 band reflectance outputs for every capture in your imageset. During batch processing of an imageset, extra 'functionland' operations may be performed i.e. pixel listing, grayscale processing, multispectral indexes.
+
+## 🌱🟤 functionland Script Overview
 
 *Functionland Script contains special functions called by main Scripts for performing further multispectral image processing, vegetation & sediment index computation, and pixel-level ML analysis.*
 
@@ -35,7 +38,7 @@ Use it as a quick reference for what each function does and how it fits into you
 
 ---
 
-## 🖼️ Image + Pixel Handling
+## Image + Pixel Handling
 
 ### **`write_labeled_pixels()`**
 
@@ -64,7 +67,7 @@ Creates a greyscale visualization of aligned band stacks.
 
 ---
 
-## 🌱 Vegetation & Sediment Index Calculations
+## Vegetation & Sediment Index Calculations
 
 ### **`NDVI_calculator()`**
 
@@ -88,7 +91,7 @@ Calculates **NDWI** (Normalized Difference Water Index) to evaluate moisture con
 
 ---
 
-## 📊 Analysis Tools
+## Analysis Tools
 
 ### **`capturepixellister()`**
 
@@ -104,7 +107,7 @@ Applies rule-based threshold masks on band or index values, with optional overla
 
 ---
 
-## 🤖 Machine Learning Maskers
+## Machine Learning Maskers
 
 ### **`dnnmasker()`**
 
@@ -124,7 +127,7 @@ Outputs pixel-level **Random Forest probabilities**.
 
 ---
 
-## 🗺️ Utility & Visualization
+## Utility & Visualization
 
 ### **`plot_metadata_csv()`**
 
