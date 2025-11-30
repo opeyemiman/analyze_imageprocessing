@@ -29,3 +29,5 @@ dependencies:
     - rawpy
     - folium
     - shapely
+    - keras
+    - tensorflow
